@@ -1,0 +1,259 @@
+html{
+    /*background-color: rgb(234, 248, 248);*/
+    background-color: rgb(249, 249, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+}
+
+#page{
+    width: 960px;
+}
+ 
+header{
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 0vh;
+    position: sticky;
+    top: 0;
+}
+
+h1{
+    font-size: 300%;
+}
+
+#btn-edicao{
+    width: 48px;
+    text-decoration: none;
+    color: gray;
+}
+
+.bi-pencil-square{
+    width: 100%;
+    height: 100%;
+}
+
+/* #btn-edicao{
+    border: 4px solid gray;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-decoration: none;
+    background-image: url(../assets/edit.png);
+    background-color: transparent;
+    background-size:70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 48px;
+    height: 48px;
+}*/
+
+
+#btn-edicao:hover{
+    color:black;
+}
+
+#form-box{
+    background-color:rgb(209, 255, 209);
+    padding: 0.5vh 0.5vw; /*top-bottom right-left*/
+    max-width: 960px;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.027);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+
+.item-group-form{
+    background-color:rgb(255, 229, 229);
+    padding: 0.4vh 0.4vw 0.4vh 0.4vw; /*top right bottom left*/
+    margin-top: 0.4vh;
+    margin-left: 0.4vw;
+    margin-right: 0.4vw;
+}
+
+.input-feedback{
+    display: flex;
+    flex-direction: column;
+}
+
+#pair{
+    width: 140px;
+}
+
+input[type="text"],input[type="search"], select{
+    background-color: rgba(0, 0, 0, 0.103);
+    border: 0 solid black;
+    border-bottom-width: 2px;
+}
+
+.label-align{   
+    float: left;
+    width: 186px;
+    text-align: right;
+    padding-right: 1vw;
+    
+}
+
+#chartLink{
+    width: calc(100% - 186px - 2vw);
+}
+
+input[type="number"]{
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.103);
+    border: 0 solid black;
+    border-bottom-width: 2px;
+}
+
+.feedback{
+    padding-top: 0.6vh;
+    color: red;
+    font-size: 10px;
+}
+.feedback-suppression{
+    display: none;
+}
+
+legend{
+    padding: 0.5vh 0.5vh;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.027);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+}
+
+#buy-zone, #rebuy{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1Vh;
+}
+#buy-zone-input, #rebuy-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#targets-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.target-content{
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+.feedback-content{
+    padding-top: 0.6vh;
+    padding-left: calc(180px + 1%);
+    font-size: 10px;
+}
+.feedback-green{
+    color: green;
+}
+.feedback-red{
+    color: red;
+}
+
+#gerador-de-comando, #adicionar-alvo{
+    margin-top: 0.5vh;
+    width: 100%;
+    padding: 1vh 0vh;
+}
+
+.remover-alvo{
+    background-color:rgb(250, 181, 181);
+    border: 1px solid rgb(255, 112, 112);
+    border-left: 2px solid rgb(255, 112, 112);
+    border-bottom: 2px solid rgb(255, 112, 112);
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    cursor: pointer;
+}
+.remover-alvo:hover{
+    background-color:rgb(255, 123, 123);
+    border: 1px solid red;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
+    font-weight: bold;
+}
+
+.seta, #gerador-de-comando, #adicionar-alvo{
+    background-color: rgb(173, 184, 184);
+    border: 1px solid rgb(135, 145, 145);
+    border-left: 2px solid rgb(135, 145, 145);
+    border-bottom: 2px solid rgb(135, 145, 145);
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    cursor: pointer;
+}
+.seta:hover, #gerador-de-comando:hover, #adicionar-alvo:hover{
+    background-color:rgb(135, 145, 145);
+    border: 1px solid rgb(75, 82, 82);
+    border-left: 2px solid rgb(75, 82, 82);;
+    border-bottom: 2px solid rgb(75, 82, 82);;
+    font-weight: bold;
+}
+
+#levelRisk-box{
+    background-color:rgb(209, 255, 209)
+}
+
+#comando{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    max-width: 740px;
+    overflow-wrap: break-word;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    position: fixed;
+    bottom: 0;
+}
+
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+}
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+.seta{
+    display: none;
+}
