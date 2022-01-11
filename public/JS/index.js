@@ -120,6 +120,7 @@ function tradingDurationAsANumber(value){
     if(value == "1-ST/Position") return 1;
     if(value == "2-Position") return 2;
 }
+
 function atualizarComando(){
 	let internId        = document.getElementById("intern-id");
 	let pair            = document.getElementById('pair');
@@ -164,6 +165,7 @@ function atualizarComando(){
 	}
 	jsonComando.tradingDuration = tradingDurationAsANumber(tradingDuration.value);
 }
+
 function validarComando(){
     return pairFeedback() &
         chartLinkFeedback() &
@@ -176,10 +178,11 @@ function validarComando(){
 }
 
 function copiarComandoParaAreaDeTransferencia(){
-    let comando           = document.getElementById('comando');
-        comando.innerText = JSON.stringify(jsonComando);
-    navigator.clipboard.writeText(JSON.stringify(jsonComando));
-    alert("Comando copiado para a área de transferência");
+  let comando           = document.getElementById('comando');
+
+  comando.innerText = JSON.stringify(jsonComando,null,4);
+  navigator.clipboard.writeText(JSON.stringify(jsonComando));
+  alert("Comando copiado para a área de transferência");
 }
 
 function carregarValoresMaximoEMinimo(){
@@ -494,7 +497,6 @@ chartLink.addEventListener('input',chartLinkFeedback,false);
 let buyZone = document.getElementById('buy-zone');
 buyZone.addEventListener('input',buyZoneFeedback,false);
 
-
 let reBuy = document.getElementById('rebuy');
 reBuy.addEventListener('input',reBuyFeedback,false);
 
@@ -560,4 +562,3 @@ targetsContent.addEventListener('click', ()=>{
         atualizarEtiquetaDosAlvos();
     }
 });
-

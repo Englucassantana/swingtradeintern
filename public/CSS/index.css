@@ -19,8 +19,6 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1vh 0vh;
-    position: sticky;
-    top: 0;
 }
 
 h1{
@@ -203,19 +201,11 @@ legend{
     background-color:rgb(209, 255, 209)
 }
 
-#comando{
-    display: block;
-    text-align: center;
-    padding-top: 10px;
-    max-width: 740px;
-    overflow-wrap: break-word;
-}
+
 
 footer{
     width: 100%;
     background-color: rgb(249, 249, 249);
-    position: fixed;
-    bottom: 0;
 }
 
 .autocomplete {
@@ -256,4 +246,11 @@ footer{
 }
 .seta{
     display: none;
+}
+
+pre code {
+    display: block;
+    padding: 20px;
+    color: rgb(98, 98, 98);
+    font-family: 'Courier New', Courier, monospace;
 }
