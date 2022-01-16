@@ -1,227 +1,230 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swing Trade Position</title>
-    <link href="./CSS/reset.css" type="text/css" rel="stylesheet"/>
-    <link href="./CSS/index.css" type="text/css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swing Trade Position</title>
+  <link href="./CSS/reset.css" type="text/css" rel="stylesheet"/>
+  <link href="./CSS/index.css" type="text/css" rel="stylesheet"/>
 
 </head>
-    <body>
-        <div id="page">
+  <body>
+    <div id="page">
 
-            <header>
-                <h1>Novo Sinal</h1>
-            </header>
-        
-            <div id="form-box">
-                <form autocomplete="off">
-                    <div id="intern-id-box" class="item-group-form input-feedback">
-                        <div id="intern-id-content">
-                            <label class="label-align" for="intern-id">Sua id de estagiário:</label>
-                            <input id="intern-id" type="text" name="intern-id"><br/>
-                        </div>
-                        <span class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae. </span>
-                    </div>
-
-                    <div id="pair-box" class="item-group-form input-feedback">
-                        <div id="pair-input-content">
-                            <label class="label-align" for="pair">Pair:</label>
-                            <div class="autocomplete">
-                                <input id="pair" type="search" name="pair"><br/>
-                            </div>                            
-                        </div>                        
-                        <span class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae. </span>
-                    </div>
-
-                    <div id="chart-link-box" class="item-group-form input-feedback">
-                        <div id="chart-link-input-content">
-                            <label class="label-align" for="chartLink">Chart Link:</label>
-                            <input id="chartLink" type="text" name="chart-link"><br/>
-                        </div>                        
-                        <span class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
-                    </div>
-
-                    <div class="item-group-form">
-
-                        <fieldset id="buy-zone">
-                            <legend>Zonas de Compra</legend>
-
-                            <div id="buy-zone-input">
-                                <div id="buy-zone-min-content" class="input-feedback">
-                                    <div id="buy-zone-min-input-content">
-                                        <label class="label-align" for="buyZoneMin">Zona mínima de compra:</label>
-                                        <input id="buyZoneMin" type="number" name="zona-minima-de-compra" type="number"><br>
-                                    </div>                                    
-                                    <span id='buyZoneMinFeedback' class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
-                                </div>
-                                
-                                <div id="buy-zone-max-content" class="input-feedback">
-                                    <div id="buy-zone-max-input-content" >
-                                        <label class="label-align" for="buyZoneMax">Zona máxima de compra:</label>
-                                        <input id="buyZoneMax" type="number" name="zona-maxima-de-compra" type="number"><br>
-                                    </div>                                    
-                                    <span id='buyZoneMaxFeedback' class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
-                                </div>
-
-                            </div>
-
-                        </fieldset>
-                    </div>
-
-                    <div class="item-group-form">                        
-                        <fieldset id="rebuy">
-                            <legend>Recompras</legend>
-
-                            <div id="rebuy-input">
-
-                                <div id="rebuy-min-content" class="input-feedback">
-                                    <div id="rebuy-min-input-content">
-                                        <label class="label-align" for="reBuyMin"">Recompra mínima:</label>
-                                        <input id="reBuyMin" type="number"> <br>
-                                    </div>                                    
-                                    <span id = 'reBuyMinFeedback'class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
-                                </div>
-
-                                <div id="rebuy-max-content" class="input-feedback">
-                                    <div id="rebuy-max-input-content">
-                                        <label class="label-align" for="reBuyMax">Recompra máxima:</label>
-                                        <input id="reBuyMax" type="number"><br>
-                                    </div>                                    
-                                    <span id = 'reBuyMaxFeedback'class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
-                                </div>
-
-                            </div>
-                            
-                            
-                        </fieldset>  
-                    </div>
-
-                    <div class="item-group-form">
-                        <fieldset>
-                            <legend>Alvos</legend>
-
-                            <div id="targets-content">
-                                
-                                <div class="target-content">
-                                    <div class="target-input-content">
-                                        <label class="label-align" for="target1">Alvo 1:</label>
-                                        <input id="target1" class="targets" type="number">
-                                        <button class="remover-alvo">&#215</button>
-                                        <button class="seta">&#8595</button>
-                                        <button class="seta">&#8593</button>
-                                    </div>
-                                    <span class="feedback-content feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
-                                </div>
-
-                                <div class="target-content">
-                                    <div class="target-input-content">
-                                        <label class="label-align" for="target2">Alvo 2:</label>
-                                        <input id="target2" class="targets" type="number">
-                                        <button class="remover-alvo">&#215</button>
-                                        <button class="seta">&#8595</button>
-                                        <button class="seta">&#8593</button>
-                                    </div>                                   
-                                    <span class="feedback-content feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
-                                </div>
-
-                                <div class=target-content>
-                                    <div class="target-input-content">
-                                        <label class="label-align" for="target3">Alvo 3:</label>
-                                        <input id="target3" class="targets" type="number">
-                                        <button class="remover-alvo">&#215</button>
-                                        <button class="seta">&#8595</button>
-                                        <button class="seta">&#8593</button>
-                                    </div>                                
-                                    <span class="feedback-content feedback-suppression">Aviso</span>
-                                </div>
-
-                                <div class="target-content">
-                                    <div class="target-input-content">
-                                        <label class="label-align" for="target4">Alvo 4:</label>
-                                        <input id="target4" class="targets" type="number">
-                                        <button class="remover-alvo">&#215</button>
-                                        <button class="seta">&#8595</button>
-                                        <button class="seta">&#8593</button>
-                                    </div>
-                                    <span class="feedback-content feedback-suppression">Lorem ipsum ad maecenas cursus justo sapien donec felis, faucibus suscipit turpis urna gravida nibh justo, semper convallis facilisis hendrerit tellus blandit curabitur.</span>                               
-                                    
-                                </div>
-
-                            </div>
-
-                            <input id="adicionar-alvo"type="button" name="adicionar_alvo" value="Adicionar alvo">
-                        
-                        </fieldset>
-                    </div>      
-                    
-                    <div class="item-group-form input-feedback" style="display: none;">
-                        <div id="stoploss-input-content">
-                            <label class="label-align" for="stoploss">Stoploss:</label>
-                            <input id="stoploss" type="number" name="stop-loss"><br/>
-                        </div>                        
-                        <span class="feedback"></span>
-                    </div>  
-                    
-                    <div id="levelRisk-box"class="item-group-form" style="background-color:rgb(209, 255, 209);">
-                        <label class="label-align" for="levelRisk">Nível de Risco:</label>
-                        <select id="levelRisk">
-                            <option>Alto</option>
-                            <option>Moderado a alto</option>            
-                            <option>Moderado</option>
-                            <option>Baixo a moderado</option>
-                            <option>Baixo</option>
-                        </select> <br/>
-                    </div>  
-                    
-                    <div class="item-group-form input-feedback">
-                        <div id="advice-input-content">
-                            <label class="label-align" for="advice">Conselho:</label>
-                            <input id="advice" type="text"> <br/>
-                        </div>                        
-                        <span class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
-                    </div>
-                    
-                    <div class="item-group-form" style="background-color:rgb(209, 255, 209); display: none;">
-                        <label class="label-align" for="isStPosition">É <i>Swing trade/ Position</i>?</label>
-                        <select id="isStPosition">
-                            <option>Sim</option>
-                            <option>Não</option>
-                        </select> <br/>      
-                    </div>
-                    
-                    <div class="item-group-form input-feedback">
-                        <div id="exchange-input-content">
-                            <label class="label-align" for="exchange">Exchange:</label>
-                            <input id="exchange"type="text"> <br/>
-                        </div>                        
-                        <span class="feedback feedback-suppression"></span>
-                    </div>
-                    
-                    <div class="item-group-form" style="background-color:rgb(209, 255, 209);">
-                        <label class="label-align" for="tradingDuration">Duração do <i>trade</i>:</label>
-                        <select id="tradingDuration">
-                            <option>0-ST</option>
-                            <option>1-ST/Position</option>
-                            <option>2-Position</option>
-                        </select> <br/>
-                    </div>
-                    <input id="gerador-de-comando"type="button" value="Gerar comando">
-                    <pre><code id="comando" class="language-javascript"></code></pre>
-                </form>        
+      <header>
+        <h1>Novo Sinal</h1>
+        <a href="./simpleSignal.html" class="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index" viewBox="0 0 16 16">
+          <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435a4.9 4.9 0 0 1 .106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
+        </svg> Simples</a>
+      </header>
+    
+      <div id="form-box">
+        <form autocomplete="off">
+          <div id="intern-id-box" class="item-group-form input-feedback">
+            <div id="intern-id-content">
+              <label class="label-align" for="intern-id">Sua id de estagiário:</label>
+              <input id="intern-id" type="text" name="intern-id"><br/>
             </div>
-            <footer>
-                <p>
-                    back-end: Ramon
-                </p>
-                <p>front-end: Lucas</p>
+            <span class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae. </span>
+          </div>
+
+          <div id="pair-box" class="item-group-form input-feedback">
+            <div id="pair-input-content">
+              <label class="label-align" for="pair">Pair:</label>
+              <div class="autocomplete">
+                <input id="pair" type="search" name="pair"><br/>
+              </div>                            
+            </div>                        
+            <span class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae. </span>
+          </div>
+
+          <div id="chart-link-box" class="item-group-form input-feedback">
+            <div id="chart-link-input-content">
+              <label class="label-align" for="chartLink">Chart Link:</label>
+              <input id="chartLink" type="text" name="chart-link"><br/>
+            </div>                        
+            <span class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
+          </div>
+
+          <div class="item-group-form">
+
+            <fieldset id="buy-zone">
+              <legend>Zonas de Compra</legend>
+
+              <div id="buy-zone-input">
+                <div id="buy-zone-min-content" class="input-feedback">
+                  <div id="buy-zone-min-input-content">
+                    <label class="label-align" for="buyZoneMin">Zona mínima de compra:</label>
+                    <input id="buyZoneMin" type="number" name="zona-minima-de-compra" type="number"><br>
+                  </div>                                    
+                  <span id='buyZoneMinFeedback' class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
+                </div>
                 
-            </footer>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="./JS/index.js"></script>
-    </body>
+                <div id="buy-zone-max-content" class="input-feedback">
+                  <div id="buy-zone-max-input-content" >
+                    <label class="label-align" for="buyZoneMax">Zona máxima de compra:</label>
+                    <input id="buyZoneMax" type="number" name="zona-maxima-de-compra" type="number"><br>
+                  </div>                                    
+                  <span id='buyZoneMaxFeedback' class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
+                </div>
+
+              </div>
+
+            </fieldset>
+          </div>
+
+          <div class="item-group-form">                        
+            <fieldset id="rebuy">
+              <legend>Recompras</legend>
+
+              <div id="rebuy-input">
+
+                <div id="rebuy-min-content" class="input-feedback">
+                  <div id="rebuy-min-input-content">
+                    <label class="label-align" for="reBuyMin"">Recompra mínima:</label>
+                    <input id="reBuyMin" type="number"> <br>
+                  </div>                                    
+                  <span id = 'reBuyMinFeedback'class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
+                </div>
+
+                <div id="rebuy-max-content" class="input-feedback">
+                  <div id="rebuy-max-input-content">
+                    <label class="label-align" for="reBuyMax">Recompra máxima:</label>
+                    <input id="reBuyMax" type="number"><br>
+                  </div>                                    
+                  <span id = 'reBuyMaxFeedback'class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
+                </div>
+
+              </div>
+              
+              
+            </fieldset>  
+          </div>
+
+          <div class="item-group-form">
+            <fieldset>
+              <legend>Alvos</legend>
+
+              <div id="targets-content">
+                
+                <div class="target-content">
+                  <div class="target-input-content">
+                    <label class="label-align" for="target1">Alvo 1:</label>
+                    <input id="target1" class="targets" type="number">
+                    <button class="remover-alvo">&#215</button>
+                    <button class="seta">&#8595</button>
+                    <button class="seta">&#8593</button>
+                  </div>
+                  <span class="feedback-content feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
+                </div>
+
+                <div class="target-content">
+                  <div class="target-input-content">
+                    <label class="label-align" for="target2">Alvo 2:</label>
+                    <input id="target2" class="targets" type="number">
+                    <button class="remover-alvo">&#215</button>
+                    <button class="seta">&#8595</button>
+                    <button class="seta">&#8593</button>
+                  </div>                                   
+                  <span class="feedback-content feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
+                </div>
+
+                <div class=target-content>
+                  <div class="target-input-content">
+                    <label class="label-align" for="target3">Alvo 3:</label>
+                    <input id="target3" class="targets" type="number">
+                    <button class="remover-alvo">&#215</button>
+                    <button class="seta">&#8595</button>
+                    <button class="seta">&#8593</button>
+                  </div>                                
+                  <span class="feedback-content feedback-suppression">Aviso</span>
+                </div>
+
+                <div class="target-content">
+                  <div class="target-input-content">
+                    <label class="label-align" for="target4">Alvo 4:</label>
+                    <input id="target4" class="targets" type="number">
+                    <button class="remover-alvo">&#215</button>
+                    <button class="seta">&#8595</button>
+                    <button class="seta">&#8593</button>
+                  </div>
+                  <span class="feedback-content feedback-suppression">Lorem ipsum ad maecenas cursus justo sapien donec felis, faucibus suscipit turpis urna gravida nibh justo, semper convallis facilisis hendrerit tellus blandit curabitur.</span>                               
+                  
+                </div>
+
+              </div>
+
+              <input id="adicionar-alvo"type="button" name="adicionar_alvo" value="Adicionar alvo">
+            
+            </fieldset>
+          </div>      
+          
+          <div class="item-group-form input-feedback" style="display: none;">
+            <div id="stoploss-input-content">
+              <label class="label-align" for="stoploss">Stoploss:</label>
+              <input id="stoploss" type="number" name="stop-loss"><br/>
+            </div>                        
+            <span class="feedback"></span>
+          </div>  
+          
+          <div id="levelRisk-box"class="item-group-form" style="background-color:rgb(209, 255, 209);">
+            <label class="label-align" for="levelRisk">Nível de Risco:</label>
+            <select id="levelRisk">
+              <option>Alto</option>
+              <option>Moderado a alto</option>            
+              <option>Moderado</option>
+              <option>Baixo a moderado</option>
+              <option>Baixo</option>
+            </select> <br/>
+          </div>  
+          
+          <div class="item-group-form input-feedback">
+            <div id="advice-input-content">
+              <label class="label-align" for="advice">Conselho:</label>
+              <input id="advice" type="text"> <br/>
+            </div>                        
+            <span class="feedback feedback-suppression">Lorem ipsum tincidunt leo vehicula bibendum, sapien aenean neque vitae.</span>
+          </div>
+          
+          <div class="item-group-form" style="background-color:rgb(209, 255, 209); display: none;">
+            <label class="label-align" for="isStPosition">É <i>Swing trade/ Position</i>?</label>
+            <select id="isStPosition">
+              <option>Sim</option>
+              <option>Não</option>
+            </select> <br/>      
+          </div>
+          
+          <div class="item-group-form input-feedback">
+            <div id="exchange-input-content">
+              <label class="label-align" for="exchange">Exchange:</label>
+              <input id="exchange"type="text"> <br/>
+            </div>                        
+            <span class="feedback feedback-suppression"></span>
+          </div>
+          
+          <div class="item-group-form" style="background-color:rgb(209, 255, 209);">
+            <label class="label-align" for="tradingDuration">Duração do <i>trade</i>:</label>
+            <select id="tradingDuration">
+              <option>0-ST</option>
+              <option>1-ST/Position</option>
+              <option>2-Position</option>
+            </select> <br/>
+          </div>
+          <input id="gerador-de-comando"type="button" value="Gerar comando">
+          <pre><code id="comando" class="language-javascript"></code></pre>
+        </form>        
+      </div>
+      <footer>
+        <p>
+          back-end: Ramon
+        </p>
+        <p>front-end: Lucas</p>
+        
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./JS/index.js"></script>
+  </body>
 
 </html>

@@ -19,10 +19,33 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1vh 0vh;
+    align-items: center;
 }
 
 h1{
     font-size: 300%;
+}
+
+a.button{
+    padding: 0px 2px;
+    font-size: larger;
+    border: 2px solid rgb(128, 128, 128);
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+    border-style: outset;
+    border-radius: 5px;
+    background-color: rgb(237, 243, 160);
+}
+
+a.button:hover{
+    color: black;
+    border-bottom: 3px;
+    border-right: 3px;
+    border-style: outset;
+}
+
+a.button:active{
+    border-style: inset;
 }
 
 #btn-edicao{
